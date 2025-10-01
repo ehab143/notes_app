@@ -1,13 +1,13 @@
-abstract class NotesState {}
+abstract class AddNotesState {}
 
-class NotesInitial extends NotesState {}
+class AddNotesInitial extends AddNotesState {}
 
-class NotesLoading extends NotesState {}
+class AddNotesLoading extends AddNotesState {}
 
-class NotesSuccess extends NotesState {}
+class AddNotesSuccess extends AddNotesState {}
 
-class NotesFaluire extends NotesState {
+class AddNotesFaluire extends AddNotesState {
   final String errMessage;
 
-  NotesFaluire(this.errMessage);
+  AddNotesFaluire(this.errMessage);
 }
