@@ -51,7 +51,7 @@ class _AddNoteFormState extends State<AddNoteForm> {
                     formKey.currentState!.save();
 
                     var formattedDate = DateFormat(
-                      'dd-mm-yyyy',
+                      'dd/MM/yyyy',
                     ).format(DateTime.now());
                     var noteModel = NoteModel(
                       title: title!,
