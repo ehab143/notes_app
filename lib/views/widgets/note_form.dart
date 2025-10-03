@@ -42,6 +42,8 @@ class _AddNoteFormState extends State<AddNoteForm> {
               subtitle = value;
             },
           ),
+          SizedBox(height: 24),
+
           ColorsListView(),
           SizedBox(height: 24),
           BlocBuilder<AddNotesCubit, AddNotesState>(
@@ -76,4 +78,3 @@ class _AddNoteFormState extends State<AddNoteForm> {
     );
   }
 }
-
